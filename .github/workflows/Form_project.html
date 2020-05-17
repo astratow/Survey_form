@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form project for freeCodeCamp.org Responsive Web Design course</title>
+  <meta charset="UTF-8"/>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer> </script>
+ <!-- 
+ <style>
+  body {
+	background-color: #002B36;
+	font-color: #839496;
+  }
+ 
+  </style>
+ -->   
+  
+</head>
+<body>
+
+  <h1 id="title">Form</h1>
+  <p id="description">This is little survey for <a href="https://freecodecamp.org target="_blank">freeCodeCamp.org</a>.</p>
+  <form id="survey-form" action="/action_page.php" method="get"> 
+  
+	<label id="name-label">Type Your Name please:</label> <br>
+	<input type="text" id="name" required placeholder="Type Your Name please"><br>
+	
+	<label id="email-label">Would you disclose your email address please:</label> <br>
+	<input type="email" id="email" required placeholder="Would you disclose your email address please"><br>
+	
+	<label id="number-label">How old are You my friend? </label><br>
+	<input type="number" id="number" name="quantity" min="1" max="200" placeholder="How old are You my friend?"><br>
+	
+	<label id="editor-label">What is your favourite editor?</label><br>
+	<select id="dropdown" name="editors">
+		<option value="atom">Atom</option>
+		<option value="brackets">Brackets</option>
+		<option value="emacs">Emacs</option>
+		<option value="notepadplusplus">Notepad++</option>
+		<option value="notetab">NoteTab</option>
+		<option value="programmers_editor">Programmer's editor</option>
+		<option value="sublime">Sublime Text</option>
+		<option value="Vi">Vi/Vim</option
+		<option value="visual_studio">Visual Studio Code</option>
+		<option value="other">Other</option>
+	</select><br>
+	
+	<label id="colour">What is your favourite colour?</label><br>
+	<input type="radio" id="red" name="colour" value="red"><label for="red">Red</label><br>
+	<input type="radio" id="blue" name="colour" value="blue"><label for="blue">Blue</label><br>
+	<input type="radio" id="yellow" name="colour" value="yellow"><label for="yellow">Yellow</label><br>
+	<input type="radio" id="black" name="other" value="black"><label for="other">Black</label><br>
+	<input type="radio" id="white" name="other" value="white"><label for="other">White</label><br>
+	<input type="radio" id="other" name="other" value="other"><label for="other">Other</label><br>
+	
+	<label id="tea">When do you drink tea?</label><br
+	<input type="checkbox" id="morning" name="morning" value="morning">
+	<label for="vehicle1"> In the morning.</label><br>
+	<input type="checkbox" id="afternoon" name="afternoon" value="afternoon">
+	<label for="afternoon"> In the afternoon.</label><br>
+	<input type="checkbox" id="evening" name="evening" value="evening">
+	<label for="evening"> In the evening.</label><br>
+	<input type="checkbox" id="never" name="never" value="never">
+	<label for="never"> Stupid question! I don't drink tea at all!</label><br>	
+	
+	<label id="comments" for="comments">Would you be so kind and tell us anything please?</label><br>
+	<textarea id="comment" placeholder="Would you be so kind and tell us anything please?"></textarea>
+	<br>
+	<input type="submit" id="submit" value="Submit">
+	
+	
+  
+  </form>
+  
+</body>
+</html>
